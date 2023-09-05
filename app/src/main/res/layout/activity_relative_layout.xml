@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutActivity"
+    android:id="@+id/parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="My Phone"
+        android:textSize="24sp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:id="@+id/title"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:src="@drawable/samsung"
+        android:layout_below="@+id/title"
+        android:id="@+id/b"
+        android:layout_margin="@dimen/_16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b"
+        android:text="Samsung Galaxy S22 5G"
+        android:textSize="24sp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:id="@+id/merk"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b"
+        android:text="$522.9"
+        android:textSize="24sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:id="@+id/harga"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:layout_below="@+id/harga"
+        android:padding="@dimen/_16dp"
+        android:id="@+id/description"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_phone_android_24"
+        android:layout_below="@+id/description"
+        android:layout_marginHorizontal="@dimen/_16dp"
+        android:layout_marginVertical="5dp"
+        android:id="@+id/logo_phone"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="256GB|8GB"
+        android:layout_below="@+id/description"
+        android:layout_toEndOf="@+id/logo_phone"
+        android:layout_marginVertical="6dp"
+        android:id="@+id/label_phone"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_photo_camera_24"
+        android:layout_below="@+id/logo_phone"
+        android:layout_marginHorizontal="@dimen/_16dp"
+        android:layout_marginVertical="5dp"
+        android:id="@+id/logo_camera"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_camera"
+        android:layout_below="@+id/logo_phone"
+        android:layout_toEndOf="@+id/logo_phone"
+        android:layout_marginVertical="6dp"
+        android:id="@+id/label_camera"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bookmark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_16dp"
+        android:background="@drawable/button"
+        android:text="BOOKMARK"
+        android:paddingHorizontal="@dimen/_16dp"
+        android:drawableLeft="@drawable/baseline_bookmark_border_24"
+        />
+
+
+</RelativeLayout>
